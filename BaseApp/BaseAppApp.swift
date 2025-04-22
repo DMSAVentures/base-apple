@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct BaseAppApp: App {
     let persistenceController = PersistenceController.shared
-
+    let viewModel = CounterViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            #if os(iOS)
+            CounterViewControllerRepresentable()
+            #elseif os(watchOS)
+            CounterWatchView(viewModel:viewModel)
+            #elseif os(macOS)
+            CounterMacView(viewModel:  viewModel)
+            #endif
         }
     }
 }
