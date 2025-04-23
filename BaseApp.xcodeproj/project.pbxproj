@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52507A462DB8099E007C6D03 /* BaseAppWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 52507A3C2DB8099C007C6D03 /* BaseAppWatch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52507A442DB8099E007C6D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525079FC2DB7537B007C6D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52507A3B2DB8099C007C6D03;
+			remoteInfo = "BaseAppWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52507A4A2DB8099E007C6D03 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				52507A462DB8099E007C6D03 /* BaseAppWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		52507A042DB7537B007C6D03 /* BaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52507A3C2DB8099C007C6D03 /* BaseAppWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseAppWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +45,27 @@
 			path = BaseApp;
 			sourceTree = "<group>";
 		};
+		52507A3D2DB8099C007C6D03 /* BaseAppWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BaseAppWatch Watch App";
+			sourceTree = "<group>";
+		};
+		52507A4D2DB80A97007C6D03 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		52507A012DB7537B007C6D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52507A392DB8099C007C6D03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,7 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				52507A062DB7537B007C6D03 /* BaseApp */,
+				52507A3D2DB8099C007C6D03 /* BaseAppWatch Watch App */,
 				52507A052DB7537B007C6D03 /* Products */,
+				52507A4D2DB80A97007C6D03 /* Shared */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				52507A042DB7537B007C6D03 /* BaseApp.app */,
+				52507A3C2DB8099C007C6D03 /* BaseAppWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,19 +104,45 @@
 				52507A002DB7537B007C6D03 /* Sources */,
 				52507A012DB7537B007C6D03 /* Frameworks */,
 				52507A022DB7537B007C6D03 /* Resources */,
+				52507A4A2DB8099E007C6D03 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52507A452DB8099E007C6D03 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				52507A062DB7537B007C6D03 /* BaseApp */,
+				52507A4D2DB80A97007C6D03 /* Shared */,
 			);
 			name = BaseApp;
 			packageProductDependencies = (
 			);
 			productName = BaseApp;
 			productReference = 52507A042DB7537B007C6D03 /* BaseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52507A3B2DB8099C007C6D03 /* BaseAppWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52507A472DB8099E007C6D03 /* Build configuration list for PBXNativeTarget "BaseAppWatch Watch App" */;
+			buildPhases = (
+				52507A382DB8099C007C6D03 /* Sources */,
+				52507A392DB8099C007C6D03 /* Frameworks */,
+				52507A3A2DB8099C007C6D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				52507A3D2DB8099C007C6D03 /* BaseAppWatch Watch App */,
+				52507A4D2DB80A97007C6D03 /* Shared */,
+			);
+			name = "BaseAppWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "BaseAppWatch Watch App";
+			productReference = 52507A3C2DB8099C007C6D03 /* BaseAppWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +156,9 @@
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					52507A032DB7537B007C6D03 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					52507A3B2DB8099C007C6D03 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -100,12 +178,20 @@
 			projectRoot = "";
 			targets = (
 				52507A032DB7537B007C6D03 /* BaseApp */,
+				52507A3B2DB8099C007C6D03 /* BaseAppWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52507A022DB7537B007C6D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52507A3A2DB8099C007C6D03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52507A382DB8099C007C6D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52507A452DB8099E007C6D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 52507A3B2DB8099C007C6D03 /* BaseAppWatch Watch App */;
+			targetProxy = 52507A442DB8099E007C6D03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		52507A132DB7537C007C6D03 /* Debug */ = {
@@ -319,6 +421,65 @@
 			};
 			name = Release;
 		};
+		52507A482DB8099E007C6D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLVLXBSV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BaseAppWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = xyz.protoapp.BaseApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.protoapp.BaseApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		52507A492DB8099E007C6D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLVLXBSV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BaseAppWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = xyz.protoapp.BaseApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.protoapp.BaseApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +497,15 @@
 			buildConfigurations = (
 				52507A162DB7537C007C6D03 /* Debug */,
 				52507A172DB7537C007C6D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52507A472DB8099E007C6D03 /* Build configuration list for PBXNativeTarget "BaseAppWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52507A482DB8099E007C6D03 /* Debug */,
+				52507A492DB8099E007C6D03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
